@@ -315,6 +315,7 @@ def ninety_nine_bottles_of_beer
     plural << "s" if number > 1
     song << "#{number} #{plural} of beer on the wall, #{number} #{plural} of beer."
     number -= 1
+    plural = "bottle"
     plural << "s" if (number-1) > 1 || number == 0
     song << "Take one down and pass it around, #{number == 0 ? "no more" : number} #{plural} of beer on the wall."
   end
